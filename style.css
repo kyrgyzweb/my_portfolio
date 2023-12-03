@@ -1,0 +1,14 @@
+:root {
+    box-sizing: border-box;
+    --title-font: 'Roboto Condensed', sans-serif;
+    --main-font: 'Cabin', sans-serif;
+    --brand-color: #00a78e;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
