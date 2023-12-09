@@ -3,6 +3,10 @@
 font-family: 'Noto Sans', sans-serif;*/
 
 
+/*     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+        font-family: "Fjalla One", Arial;
+*/
+
 :root {
     box-sizing: border-box;
     --title-font: 'Roboto Condensed', sans-serif;
@@ -127,8 +131,9 @@ header article .social-media ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
     text-align: center;
+    list-style-type: none;
+    
 }
 
 header article .social-media ul::before {
@@ -137,7 +142,7 @@ header article .social-media ul::before {
     width: 100px;
     height: 1px;
     margin: 0px auto;
-    background-color: lightblue;
+    background-color: white;
 }
 
 header article .social-media ul::after {
@@ -145,7 +150,7 @@ header article .social-media ul::after {
     display: block;
     width: 100px;
     height: 1px;
-    background-color: lightblue;
+    background-color: white;
 }
 
 header article .social-media ul li {
@@ -162,7 +167,16 @@ header article .social-media ul li:last-of-type {
 
 
 header article .social-media ul li a {
+    color: var(--brand-color);
+}
+
+header article .social-media ul li i {
+    cursor: pointer;
+}
+
+header article .social-media ul li i:hover {
     color: whitesmoke;
+    transition: all .5s;
 }
 
 .profile-image {
@@ -242,6 +256,7 @@ main {
 
 }
 
+/* Project section */
 main #projects {
     min-height: 80vh;
     /* background: url('./images/header-bg.jpg') no-repeat top center; */
@@ -270,6 +285,7 @@ main #projects p {
 
 main #projects .circles {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 106px;
     font-family: var(--main-font)
@@ -382,8 +398,56 @@ main #projects .circles .hadith {
     margin-left: .5em;
 }
 
+
+#contact {
+    width: 100%;
+    color: black;
+    background-color: #FCFCFC;
+    /* background-color: #EBEBEB; */
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+#contact .overlay {
+    width:60%;
+    
+    background-color: #FCFCFC;
+    /* background-color: #D0D0D0; */
+    /* background-color: rgba(23, 20, 20, 0); */
+    /* background-color: #fff; */
+    text-align: center;
+    height: 60vh;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}  
+.overlay h2 {
+    padding-top: 62px;
+    padding-bottom: 1em;
+    font-size: 2.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+
+} 
+
+.overlay hr {
+    color: #fff;
+    padding: .5em 0;
+}
+
+form {
+    line-height: 37px;
+    font-size: inherit;
+    
+
+    
+}
+
+
 footer {
-    height: 80px;
+    height: 100px;
     background-color: #3D3D3D;
     background-color: #FFF;
     color: black;
@@ -391,4 +455,34 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 1em;
+    border-top: 1px dashed #777;
+    
+    
+}
+
+input {
+    width: 50%;
+    color: #777;
+    margin-bottom: 1em;
+    border: 2px solid var(--brand-color);
+    padding: 12px 10px;
+    /* margin-bottom: 24px; */
+    outline: none;
+}
+label {
+    font-size: 1.3rem;
+    
+    
+}
+
+textarea {
+    width: 50%;
+    /* width: 50%; */
+    border: 2px solid var(--brand-color);
+    color: #777;
+    padding: 19px 10px;
+    outline: none;
+    margin: 0 auto;
+    text-align: left;
 }

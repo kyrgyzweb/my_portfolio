@@ -28,8 +28,8 @@
             <article>
                 <aside class="aside-left">
                     <div class="intro">
-                        <h1>Hi, I'm</h1>
-                        <h2>A Mamazhusupov</h2>
+                        <h1>Hi, My name is:</h1>
+                        <h2 class="my-name"></h2>
                         <h3>Front End Developer + Tech Educator</h3>
                         <p>With over 12 years of experience as a web developer, I've had the opportunity to work on a wide range of projects and with many different organizations. I also enjoy sharing knowledge and helping others learn and grow in their careers through teaching.</p>
                     </div>
@@ -40,9 +40,9 @@
 
                 <div class="social-media">
                     <ul>
-                        <li><a href=""><i class="fa fa-linkedin" style="font-size: 1.8rem"></i></a></li>
-                        <li><a href=""><i class="fa fa-github" style="font-size: 1.8rem"></i></a></li>
-                        <li><a href=""><i class="fa fa-codepen" style="font-size: 1.8rem"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mamazhusupov/" target="_blank"><i class="fa fa-linkedin" style="font-size: 1.8rem"></i></a></li>
+                        <li><a href="https://github.com/kyrgyzweb" target="_blank"><i class="fa fa-github" style="font-size: 1.8rem"></i></a></li>
+                        <li><a href="https://codepen.io/kyrgyzweb" target="_blank"><i class="fa fa-codepen" style="font-size: 1.8rem"></i></a></li>
                     </ul>
                 </div>
             </article>
@@ -83,7 +83,26 @@
                         <h4>Daily Hadith</h4>
                     </div>
                 </div>
+            </section>
 
+            <section id="contact">
+                
+                <div class="overlay">
+                    <h2>Contact me</h2>
+                    
+                    <form action="">
+                        <label for="first-name">First Name:</label><br>
+                        <input type="text" id="first-name" name="first-name" placeholder="Adam"> <br>
+
+                        <label for="last-name">Last Name:</label>
+                        <br>
+                        <input type="text" id="last-name" name="last-name" placeholder="Smith"> <br>
+
+                        <!-- <label for="text-area">Message: </label> -->
+                        <textarea name="message" id="text-area" cols="40" rows="5" placeholder="Your text here..">
+                        </textarea>
+                    </form>
+                </div>
             </section>
             <footer>
                 <p>&copy; 2023  TAMCHY.ORG - All Rights Reserved.</p>
@@ -91,6 +110,6 @@
         </main>
         
 
-
+<script src="script.js" defer></script>
 </body>
 </html>
